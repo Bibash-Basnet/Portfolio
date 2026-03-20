@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bibash Basnet — Network Security & IT Professional</title>
+  <meta name="description" content="IT professional specialising in network security, threat detection, and cybersecurity operations. Based in Kathmandu, Nepal."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 7 Pro (kit) -->
+  <!-- Replace YOUR_KIT_CODE with your FA7 Pro kit code -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background grid -->
+  <div class="grid-bg"></div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span>BB.portfolio</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"          onclick="closeMenu()">About</a></li>
+      <li><a href="#skills"         onclick="closeMenu()">Skills</a></li>
+      <li><a href="#experience"     onclick="closeMenu()">Experience</a></li>
+      <li><a href="#projects"       onclick="closeMenu()">Projects</a></li>
+      <li><a href="#certifications" onclick="closeMenu()">Certs</a></li>
+      <li><a href="#leadership"     onclick="closeMenu()">Leadership</a></li>
+      <li><a href="#contact"        onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left: Text -->
+          <div class="hero-text">
+            <div class="hero-eyebrow reveal">
+              <span class="eyebrow-line"></span>
+              Network Security &amp; IT Professional
+            </div>
+            <h1 class="hero-name reveal" style="transition-delay:.08s">
+              Bibash<br>Basnet
+            </h1>
+            <div class="hero-role reveal" id="typewriter" style="transition-delay:.14s"></div>
+            <p class="hero-desc reveal" style="transition-delay:.2s">
+              IT professional with a strong foundation in networking, security analysis, and threat detection.
+              Currently completing a Bachelor of Information Technology, backed by Google's Cybersecurity
+              Professional Certificate and Cisco CCNA training.
+            </p>
+            <div class="hero-cta reveal" style="transition-delay:.26s">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-regular fa-paper-plane"></i> Get in Touch
+              </a>
+              <a href="#projects" class="btn btn-ghost">
+                <i class="fa-regular fa-folder-open"></i> View Projects
+              </a>
+            </div>
+            <div class="hero-badges reveal stagger" style="transition-delay:.32s">
+              <span class="badge badge-green"><i class="fa-solid fa-shield-check"></i> Google Certified</span>
+              <span class="badge"><i class="fa-brands fa-cisco"></i> CCNA Training</span>
+              <span class="badge"><i class="fa-solid fa-network-wired"></i> Network Security</span>
+              <span class="badge"><i class="fa-solid fa-chart-line-up"></i> SIEM · Splunk</span>
+            </div>
+          </div>
+
+          <!-- Right: Profile Card -->
+          <div class="profile-card reveal-right">
+            <div class="profile-card-inner">
+
+              <!-- Photo ring -->
+              <div class="profile-img-wrap">
+                <!--
+                  TO ADD YOUR PHOTO:
+                  1. Save your image as "photo.jpg" in the same folder as index.html
+                  2. Delete the <div class="profile-placeholder"> block below
+                  3. Uncomment this line:
+                     <img src="photo.jpg" alt="Bibash Basnet">
+                -->
+                <div class="profile-placeholder">
+                  <i class="fa-regular fa-user profile-placeholder-icon"></i>
+                  <span>Your Photo Here</span>
+                  <span class="ph-hint">Replace in HTML</span>
+                </div>
+              </div>
+
+              <!-- Info panel -->
+              <div class="profile-stats">
+                <div class="pstat-row">
+                  <i class="fa-solid fa-shield-halved pstat-icon accent"></i>
+                  <div class="pstat-info">
+                    <div class="pstat-label">Primary Focus</div>
+                    <div class="pstat-value">Network Security</div>
+                  </div>
+                  <span class="pstat-badge green">Active</span>
+                </div>
+                <div class="pstat-row">
+                  <i class="fa-solid fa-certificate pstat-icon accent"></i>
+                  <div class="pstat-info">
+                    <div class="pstat-label">Certification</div>
+                    <div class="pstat-value">Google Cybersecurity</div>
+                  </div>
+                  <span class="pstat-badge">2025</span>
+                </div>
+                <div class="pstat-row">
+                  <i class="fa-solid fa-graduation-cap pstat-icon accent"></i>
+                  <div class="pstat-info">
+                    <div class="pstat-label">Degree</div>
+                    <div class="pstat-value">B.IT — Cybersecurity</div>
+                  </div>
+                  <span class="pstat-badge">2026</span>
+                </div>
+                <div class="pstat-row">
+                  <i class="fa-solid fa-location-dot pstat-icon accent"></i>
+                  <div class="pstat-info">
+                    <div class="pstat-label">Location</div>
+                    <div class="pstat-value">Kathmandu, Nepal</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p class="section-label reveal">// 01. About</p>
+            <h2 class="section-title reveal" style="margin-bottom:1.5rem">Who I Am</h2>
+            <p class="reveal">
+              I'm an IT professional completing my Bachelor of Information Technology at Padmashree College
+              (Nilai University), with a focus on network security and cybersecurity. I enjoy working at the
+              intersection of networking and security — designing resilient infrastructure while understanding
+              the threats that target it.
+            </p>
+            <p class="reveal">
+              I've built real-world tools including a machine-learning intrusion detection system and a honeypot
+              deployment for a national hackathon. I'm comfortable with SIEM platforms, network diagnostics,
+              Python scripting, and the MITRE ATT&amp;CK framework.
+            </p>
+            <p class="reveal">
+              Outside of technical work, I enjoy giving back — delivering security awareness sessions to
+              students and communities across Nepal.
+            </p>
+            <div class="about-contact reveal">
+              <div class="crow">
+                <i class="fa-solid fa-location-dot ci"></i>
+                <span>Baiteshwor-07, Dolakha, Nepal</span>
+              </div>
+              <div class="crow">
+                <i class="fa-solid fa-phone ci"></i>
+                <span>+977 9849957146</span>
+              </div>
+              <div class="crow">
+                <i class="fa-regular fa-envelope ci"></i>
+                <a href="mailto:bibashbasnet45@gmail.com">bibashbasnet45@gmail.com</a>
+              </div>
+              <div class="crow">
+                <i class="fa-brands fa-linkedin ci"></i>
+                <a href="https://linkedin.com/in/bibashbasnet938" target="_blank">linkedin.com/in/bibashbasnet938</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="stat-cards stagger reveal">
+              <div class="sc">
+                <div class="sc-num">95.7%</div>
+                <div class="sc-label">IDS Accuracy</div>
+              </div>
+              <div class="sc">
+                <div class="sc-num">500K+</div>
+                <div class="sc-label">Records Analysed</div>
+              </div>
+              <div class="sc">
+                <div class="sc-num">200+</div>
+                <div class="sc-label">Attacks Captured</div>
+              </div>
+              <div class="sc">
+                <div class="sc-num">100+</div>
+                <div class="sc-label">Students Trained</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section id="skills">
+      <div class="container">
+        <p class="section-label reveal">// 02. Skills</p>
+        <h2 class="section-title reveal">Technical Arsenal</h2>
+        <div class="skills-grid stagger reveal">
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-solid fa-network-wired sk-icon"></i>
+              <div class="sk-title">Networking</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">TCP/IP · OSI Model</span>
+              <span class="tag">VLANs · Trunking</span>
+              <span class="tag">OSPF · RIP</span>
+              <span class="tag">Subnetting</span>
+              <span class="tag">DNS · DHCP · NAT</span>
+              <span class="tag">Cisco IOS</span>
+              <span class="tag">Inter-VLAN Routing</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-solid fa-shield-halved sk-icon"></i>
+              <div class="sk-title">Security & Monitoring</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-green">Splunk</span>
+              <span class="tag tag-green">Chronicle</span>
+              <span class="tag">Suricata IDS</span>
+              <span class="tag">SIEM Operations</span>
+              <span class="tag">Log Analysis</span>
+              <span class="tag">Incident Response</span>
+              <span class="tag">MITRE ATT&amp;CK</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-solid fa-magnifying-glass sk-icon"></i>
+              <div class="sk-title">Security Tools</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Wireshark</span>
+              <span class="tag">Nmap</span>
+              <span class="tag">Metasploit</span>
+              <span class="tag">Burp Suite</span>
+              <span class="tag">tcpdump</span>
+              <span class="tag">Kali Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-brands fa-python sk-icon"></i>
+              <div class="sk-title">Programming & Scripting</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-green">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas · NumPy</span>
+              <span class="tag">Bash</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-solid fa-laptop-code sk-icon"></i>
+              <div class="sk-title">Systems & Platforms</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Linux (Ubuntu · Kali)</span>
+              <span class="tag">Windows Server</span>
+              <span class="tag">CLI Configuration</span>
+              <span class="tag">AWS (IAM · VPC)</span>
+              <span class="tag">Terraform</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-header">
+              <i class="fa-solid fa-clipboard-list-check sk-icon"></i>
+              <div class="sk-title">Frameworks & Standards</div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">NIST CSF</span>
+              <span class="tag">ISO 27001</span>
+              <span class="tag">OWASP Top 10</span>
+              <span class="tag">CIA Triad</span>
+              <span class="tag">NIST 800-53</span>
+              <span class="tag">Compliance Auditing</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EXPERIENCE ══════════════ -->
+    <section id="experience">
+      <div class="container">
+        <p class="section-label reveal">// 03. Experience</p>
+        <h2 class="section-title reveal">Professional Experience</h2>
+
+        <div class="exp-card reveal">
+          <div class="exp-top">
+            <div>
+              <div class="exp-title">Security Analyst Trainee</div>
+              <div class="exp-org">
+                <i class="fa-brands fa-google"></i>
+                Google Cybersecurity Certificate Programme — Coursera (Remote)
+              </div>
+            </div>
+            <div class="exp-period">Oct 2025 — Nov 2025</div>
+          </div>
+          <ul class="exp-items">
+            <li>Monitored security events using SIEM platforms (Splunk, Chronicle), identifying unauthorized access attempts, brute-force attacks, and policy violations across enterprise environments.</li>
+            <li>Implemented and tested security controls aligned with the NIST Cybersecurity Framework — focusing on Identity &amp; Access Management, encryption, and network segmentation.</li>
+            <li>Performed log analysis and forensic investigation using Linux CLI tools and Python scripts, processing 10,000+ events to reduce mean-time-to-detect (MTTD) by 35%.</li>
+            <li>Conducted vulnerability assessments and produced remediation reports; investigated incidents using the MITRE ATT&amp;CK framework from detection through recovery.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label reveal">// 04. Projects</p>
+        <h2 class="section-title reveal">Hands-On Work</h2>
+        <div class="projects-list">
+
+          <div class="proj-card reveal">
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="proj-year">Sep – Nov 2025</span>
+                <span class="proj-badge">
+                  <i class="fa-solid fa-brain-circuit"></i> ML · Security
+                </span>
+              </div>
+              <div class="proj-title">Intrusion Detection System (Machine Learning)</div>
+              <p class="proj-desc">
+                Built an ML-based IDS using ensemble models (Random Forest + XGBoost) achieving
+                <strong class="highlight">95.7% accuracy</strong> against DDoS, port scans, and zero-day exploits.
+                Processed 500K+ network traffic records with Python; reduced false positives by 40% via
+                hyperparameter tuning. Designed with AWS CloudWatch &amp; GuardDuty integration patterns.
+              </p>
+              <div class="proj-stack">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+            <div class="proj-aside">
+              <span class="proj-stat">95.7%<span>Accuracy</span></span>
+              <span class="proj-stat">−40%<span>False Positives</span></span>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="proj-year">Sep 2025</span>
+                <span class="proj-badge">
+                  <i class="fa-solid fa-trophy"></i> AsianHack 2025
+                </span>
+              </div>
+              <div class="proj-title">Honeypot Deployment &amp; Security Monitoring</div>
+              <p class="proj-desc">
+                Designed and deployed a honeypot environment at AsianHack 2025 National Hackathon,
+                capturing <strong class="highlight">200+ malicious connection attempts</strong> targeting
+                simulated hospital IT systems. Mapped attacker TTPs to MITRE ATT&amp;CK using Python scripts.
+                Presented findings to 50+ industry professionals.
+              </p>
+              <div class="proj-stack">
+                <span class="tag">Linux</span>
+                <span class="tag">Python</span>
+                <span class="tag">MITRE ATT&amp;CK</span>
+                <span class="tag">Threat Intel</span>
+                <span class="tag">Log Forensics</span>
+              </div>
+            </div>
+            <div class="proj-aside">
+              <span class="proj-stat">200+<span>Attacks Captured</span></span>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="proj-year">2024</span>
+                <span class="proj-badge">
+                  <i class="fa-solid fa-diagram-project"></i> Network Design
+                </span>
+              </div>
+              <div class="proj-title">Multi-Site Enterprise Network Design</div>
+              <p class="proj-desc">
+                Designed and configured a multi-site enterprise network featuring VLAN segmentation,
+                inter-VLAN routing, DHCP services, and dynamic routing protocols (RIP, OSPF).
+                Implemented redundancy planning and full configuration documentation for failover support.
+              </p>
+              <div class="proj-stack">
+                <span class="tag">Cisco IOS</span>
+                <span class="tag">VLANs</span>
+                <span class="tag">OSPF</span>
+                <span class="tag">RIP</span>
+                <span class="tag">DHCP</span>
+                <span class="tag">Redundancy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="proj-year">Ongoing</span>
+                <span class="proj-badge">
+                  <i class="fa-brands fa-aws"></i> AWS
+                </span>
+              </div>
+              <div class="proj-title">AWS Security Configuration &amp; IAM Policy Management</div>
+              <p class="proj-desc">
+                Practising configuration of AWS security services — IAM roles &amp; policies, Security Groups,
+                NACLs, and VPC — following the AWS Well-Architected Framework. Writing JSON/YAML IAM policies
+                with least-privilege access and MFA enforcement. Exploring GuardDuty, Security Hub, and
+                Inspector for threat detection and compliance.
+              </p>
+              <div class="proj-stack">
+                <span class="tag">AWS IAM</span>
+                <span class="tag">CloudFormation</span>
+                <span class="tag">GuardDuty</span>
+                <span class="tag">Security Hub</span>
+                <span class="tag">JSON/YAML</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CERTIFICATIONS ══════════════ -->
+    <section id="certifications">
+      <div class="container">
+        <p class="section-label reveal">// 05. Certifications</p>
+        <h2 class="section-title reveal">Credentials</h2>
+
+        <!-- Featured cert -->
+        <div class="cert-featured reveal">
+          <div class="cert-feat-icon">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="cert-feat-body">
+            <div class="cert-feat-title">Google Cybersecurity Professional Certificate</div>
+            <div class="cert-feat-issuer">Google / Coursera · 2025 · 9-Course Series · 170+ Hours</div>
+            <p class="cert-feat-desc">
+              Comprehensive programme covering threat detection, SIEM operations, Python automation,
+              Linux, SQL, incident response, network security, and vulnerability management.
+              Covers all domains for the CompTIA Security+ exam. Includes hands-on labs with
+              Splunk, Chronicle, Wireshark, and Suricata.
+            </p>
+            <div class="cert-courses">
+              <span class="cert-course">Foundations of Cybersecurity</span>
+              <span class="cert-course">Security Risk Management</span>
+              <span class="cert-course">Networks &amp; Network Security</span>
+              <span class="cert-course">Linux &amp; SQL</span>
+              <span class="cert-course">Assets, Threats &amp; Vulnerabilities</span>
+              <span class="cert-course">Detection &amp; Response</span>
+              <span class="cert-course">Python Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other certs -->
+        <div class="certs-grid stagger reveal">
+          <div class="cert-card">
+            <i class="fa-brands fa-cisco cert-ico"></i>
+            <div class="cert-name">CCNA Networking Essentials</div>
+            <div class="cert-issuer">Cisco</div>
+            <div class="cert-year">2025</div>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-fish cert-ico"></i>
+            <div class="cert-name">Wireshark Ninja: Packet Analysis</div>
+            <div class="cert-issuer">OCSALY Academy</div>
+            <div class="cert-year">2025</div>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-chart-scatter cert-ico"></i>
+            <div class="cert-name">NumPy, SciPy, Matplotlib &amp; Pandas: Machine Learning</div>
+            <div class="cert-issuer">Online Course</div>
+            <div class="cert-year">2025</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ LEADERSHIP ══════════════ -->
+    <section id="leadership">
+      <div class="container">
+        <p class="section-label reveal">// 06. Leadership</p>
+        <h2 class="section-title reveal">Community &amp; Impact</h2>
+        <div class="timeline">
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">March 2025 — Dolakha, Nepal</div>
+            <div class="tl-role">Secretary &amp; Technical Presenter</div>
+            <div class="tl-org">Cybersecurity Awareness Session — Diktel Multiple Campus (UGC Programme)</div>
+            <p class="tl-desc">Delivered an internet security awareness session to 100+ students and faculty, covering phishing, secure browsing, password hygiene, and two-factor authentication. Prepared all educational materials and documentation.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">August 2025 — Kathmandu, Nepal</div>
+            <div class="tl-role">Team Leader &amp; Event Coordinator</div>
+            <div class="tl-org">Festival Celebration Programme — Manavsewa Ashram</div>
+            <p class="tl-desc">Organised and coordinated a cultural festival programme, managing event planning, volunteer teams, and on-site logistics.</p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-date">January 2024 — Nepal</div>
+            <div class="tl-role">Organiser &amp; Team Leader</div>
+            <div class="tl-org">Community Service — Sunaulo Bihani Cerebral Palsy Day Care Centre</div>
+            <p class="tl-desc">Led a team of 8 volunteers to organise a hygiene product donation programme, coordinating logistics and team responsibilities.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EDUCATION ══════════════ -->
+    <section id="education">
+      <div class="container">
+        <p class="section-label reveal">// 07. Education</p>
+        <h2 class="section-title reveal">Academic Background</h2>
+        <div class="edu-grid">
+
+          <div class="edu-card reveal">
+            <i class="fa-solid fa-graduation-cap edu-icon"></i>
+            <div class="edu-degree">Bachelor of Information Technology</div>
+            <div class="edu-school">Padmashree College / Nilai University — Cybersecurity Focus</div>
+            <div class="edu-period">Expected May 2026</div>
+            <div class="edu-courses">
+              Cloud Security · Network Security · Cryptography · Ethical Hacking · Digital Forensics · Secure Development
+            </div>
+          </div>
+
+          <div class="edu-card reveal">
+            <i class="fa-solid fa-book-open edu-icon"></i>
+            <div class="edu-degree">Higher Secondary Certificate — Science Stream</div>
+            <div class="edu-school">Sainik Awasiya Mahavidyalaya, Bhaktapur — NEB</div>
+            <div class="edu-period">2020 — 2022</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label reveal" style="text-align:center">// 08. Contact</p>
+        <h2 class="contact-heading reveal">Let's Work Together</h2>
+        <p class="contact-sub reveal">
+          Open to networking roles, security internships, and collaborations.
+          Send a message and I'll get back to you promptly.
+        </p>
+
+        <div class="contact-wrapper">
+
+          <!-- Info column -->
+          <div class="contact-info reveal-left">
+            <h3 class="contact-info-title">Reach Me Directly</h3>
+
+            <div class="cd-row">
+              <div class="cd-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <div class="cd-label">Email</div>
+                <div class="cd-val"><a href="mailto:bibashbasnet45@gmail.com">bibashbasnet45@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="cd-label">Phone</div>
+                <div class="cd-val">+977 9849957146</div>
+              </div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <div class="cd-label">LinkedIn</div>
+                <div class="cd-val"><a href="https://linkedin.com/in/bibashbasnet938" target="_blank">linkedin.com/in/bibashbasnet938</a></div>
+              </div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="cd-label">Location</div>
+                <div class="cd-val">Kathmandu, Nepal</div>
+              </div>
+            </div>
+
+            <div class="avail-box">
+              <span class="avail-dot"></span>
+              <span class="avail-text">Available for new opportunities</span>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="form-wrap reveal-right">
+            <!--
+            ╔═══════════════════════════════════════════════╗
+            ║  FORMSPREE SETUP (2 minutes):                 ║
+            ║  1. Visit https://formspree.io — sign up free ║
+            ║  2. New Form → name it "Portfolio"            ║
+            ║  3. Copy your form ID (e.g. xpwzabcd)        ║
+            ║  4. Replace YOUR_FORM_ID in the action below  ║
+            ╚═══════════════════════════════════════════════╝
+            -->
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row">
+                <div class="fg">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name" required>
+                </div>
+                <div class="fg">
+                  <label for="femail">Email</label>
+                  <input type="email" id="femail" name="email" placeholder="your@email.com" required>
+                </div>
+              </div>
+              <div class="fg">
+                <label for="fsubject">Subject</label>
+                <input type="text" id="fsubject" name="subject" placeholder="e.g. Networking Role · Collaboration">
+              </div>
+              <div class="fg">
+                <label for="fmsg">Message</label>
+                <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about the opportunity or project…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-green form-submit">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <p>Designed &amp; built by <span>Bibash Basnet</span> — Kathmandu, Nepal</p>
+    <p class="footer-sub">
+      <i class="fa-regular fa-copyright"></i> 2025 ·
+      <a href="mailto:bibashbasnet45@gmail.com">bibashbasnet45@gmail.com</a>
+    </p>
+  </footer>
+
+  <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
