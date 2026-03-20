@@ -11,10 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 7 Pro (kit) -->
-  <!-- Replace YOUR_KIT_CODE with your FA7 Pro kit code -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/all.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -98,21 +97,13 @@
                 -->
                 <div class="profile-placeholder">
                   <i class="fa-regular fa-user profile-placeholder-icon"></i>
-                  <span>Your Photo Here</span>
+                  <span><img src="photo.jpg" alt="Bibash Basnet"></span>
                   <span class="ph-hint">Replace in HTML</span>
                 </div>
               </div>
 
               <!-- Info panel -->
               <div class="profile-stats">
-                <div class="pstat-row">
-                  <i class="fa-solid fa-shield-halved pstat-icon accent"></i>
-                  <div class="pstat-info">
-                    <div class="pstat-label">Primary Focus</div>
-                    <div class="pstat-value">Network Security</div>
-                  </div>
-                  <span class="pstat-badge green">Active</span>
-                </div>
                 <div class="pstat-row">
                   <i class="fa-solid fa-certificate pstat-icon accent"></i>
                   <div class="pstat-info">
@@ -125,9 +116,17 @@
                   <i class="fa-solid fa-graduation-cap pstat-icon accent"></i>
                   <div class="pstat-info">
                     <div class="pstat-label">Degree</div>
-                    <div class="pstat-value">B.IT — Cybersecurity</div>
+                    <div class="pstat-value">Bachelor of Information Technology</div>
                   </div>
                   <span class="pstat-badge">2026</span>
+                </div>
+                <div class="pstat-row">
+                  <i class="fa-solid fa-briefcase pstat-icon accent"></i>
+                  <div class="pstat-info">
+                    <div class="pstat-label">Open To</div>
+                    <div class="pstat-value">Internships &amp; Opportunities</div>
+                  </div>
+                  <span class="pstat-badge green">Active</span>
                 </div>
                 <div class="pstat-row">
                   <i class="fa-solid fa-location-dot pstat-icon accent"></i>
@@ -153,19 +152,18 @@
             <p class="section-label reveal">// 01. About</p>
             <h2 class="section-title reveal" style="margin-bottom:1.5rem">Who I Am</h2>
             <p class="reveal">
-              I'm an IT professional completing my Bachelor of Information Technology at Padmashree College
-              (Nilai University), with a focus on network security and cybersecurity. I enjoy working at the
-              intersection of networking and security — designing resilient infrastructure while understanding
-              the threats that target it.
+              I'm Bibash Basnet — an IT student from Nepal completing my Bachelor of Information Technology
+              at Padmashree College, with a focus on networking and security. I'm drawn to understanding
+              how systems connect, communicate, and stay protected.
             </p>
             <p class="reveal">
-              I've built real-world tools including a machine-learning intrusion detection system and a honeypot
-              deployment for a national hackathon. I'm comfortable with SIEM platforms, network diagnostics,
-              Python scripting, and the MITRE ATT&amp;CK framework.
+              Over the past year I've gained hands-on experience through coursework, self-driven projects,
+              and a national hackathon. I've worked with tools like Wireshark, Splunk, Python, and Cisco IOS —
+              and I'm comfortable across both the networking and security sides of IT.
             </p>
             <p class="reveal">
-              Outside of technical work, I enjoy giving back — delivering security awareness sessions to
-              students and communities across Nepal.
+              I also enjoy sharing knowledge — I've delivered tech awareness sessions for students and
+              communities across Nepal, which has grown my communication skills as much as my technical ones.
             </p>
             <div class="about-contact reveal">
               <div class="crow">
@@ -184,18 +182,22 @@
                 <i class="fa-brands fa-linkedin ci"></i>
                 <a href="https://linkedin.com/in/bibashbasnet938" target="_blank">linkedin.com/in/bibashbasnet938</a>
               </div>
+              <div class="crow">
+                <i class="fa-brands fa-instagram ci"></i>
+                <a href="https://www.instagram.com/bibash__basnet/" target="_blank">instagram.com/bibash__basnet</a>
+              </div>
             </div>
           </div>
 
           <div>
             <div class="stat-cards stagger reveal">
               <div class="sc">
-                <div class="sc-num">95.7%</div>
-                <div class="sc-label">IDS Accuracy</div>
+                <div class="sc-num">4+</div>
+                <div class="sc-label">Certifications</div>
               </div>
               <div class="sc">
-                <div class="sc-num">500K+</div>
-                <div class="sc-label">Records Analysed</div>
+                <div class="sc-num">3+</div>
+                <div class="sc-label">Projects Built</div>
               </div>
               <div class="sc">
                 <div class="sc-num">200+</div>
@@ -375,7 +377,6 @@
             </div>
             <div class="proj-aside">
               <span class="proj-stat">95.7%<span>Accuracy</span></span>
-              <span class="proj-stat">−40%<span>False Positives</span></span>
             </div>
           </div>
 
@@ -467,19 +468,18 @@
         <p class="section-label reveal">// 05. Certifications</p>
         <h2 class="section-title reveal">Credentials</h2>
 
-        <!-- Featured cert -->
+        <!-- Featured cert — Google -->
         <div class="cert-featured reveal">
           <div class="cert-feat-icon">
             <i class="fa-brands fa-google"></i>
           </div>
           <div class="cert-feat-body">
             <div class="cert-feat-title">Google Cybersecurity Professional Certificate</div>
-            <div class="cert-feat-issuer">Google / Coursera · 2025 · 9-Course Series · 170+ Hours</div>
+            <div class="cert-feat-issuer">Google / Coursera &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; 9-Course Series &nbsp;·&nbsp; 170+ Hours</div>
             <p class="cert-feat-desc">
-              Comprehensive programme covering threat detection, SIEM operations, Python automation,
-              Linux, SQL, incident response, network security, and vulnerability management.
-              Covers all domains for the CompTIA Security+ exam. Includes hands-on labs with
-              Splunk, Chronicle, Wireshark, and Suricata.
+              Covers threat detection, SIEM operations (Splunk, Chronicle), Python automation,
+              Linux, SQL, incident response, and network security. Prepares for CompTIA Security+.
+              Includes hands-on labs simulating real-world security scenarios.
             </p>
             <div class="cert-courses">
               <span class="cert-course">Foundations of Cybersecurity</span>
@@ -490,29 +490,52 @@
               <span class="cert-course">Detection &amp; Response</span>
               <span class="cert-course">Python Automation</span>
             </div>
+            <a href="https://coursera.org/verify/professional-cert/3E6RTQWL7BGC"
+               target="_blank" class="cert-verify-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+            </a>
           </div>
         </div>
 
-        <!-- Other certs -->
+        <!-- Other certs grid -->
         <div class="certs-grid stagger reveal">
+
           <div class="cert-card">
             <i class="fa-brands fa-cisco cert-ico"></i>
-            <div class="cert-name">CCNA Networking Essentials</div>
-            <div class="cert-issuer">Cisco</div>
+            <div class="cert-name">CCNA: Complete Networking Course</div>
+            <div class="cert-issuer">Meta Brains · Udemy</div>
             <div class="cert-year">2025</div>
+            <p class="cert-desc">TCP/IP, IP addressing, VLANs, OSPF, EIGRP, ACLs, port security, wireless networking, and network automation fundamentals.</p>
+            <a href="https://www.udemy.com/certificate/UC-2bbc5866-5fca-4b64-89fe-cdf21b34a52b/"
+               target="_blank" class="cert-verify-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+            </a>
           </div>
+
           <div class="cert-card">
-            <i class="fa-solid fa-fish cert-ico"></i>
-            <div class="cert-name">Wireshark Ninja: Packet Analysis</div>
-            <div class="cert-issuer">OCSALY Academy</div>
+            <i class="fa-solid fa-wave-pulse cert-ico"></i>
+            <div class="cert-name">Wireshark: Packet Analysis &amp; Ethical Hacking</div>
+            <div class="cert-issuer">OCSALY Academy · Udemy</div>
             <div class="cert-year">2025</div>
+            <p class="cert-desc">Packet capturing, display filters, TCP/IP analysis, IDS/ACL concepts, live traffic analysis, and network vulnerability detection.</p>
+            <a href="https://www.udemy.com/certificate/UC-d295c030-a12d-47ee-9b68-52a8d263310d/"
+               target="_blank" class="cert-verify-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+            </a>
           </div>
+
           <div class="cert-card">
-            <i class="fa-solid fa-chart-scatter cert-ico"></i>
+            <i class="fa-brands fa-python cert-ico"></i>
             <div class="cert-name">NumPy, SciPy, Matplotlib &amp; Pandas: Machine Learning</div>
-            <div class="cert-issuer">Online Course</div>
+            <div class="cert-issuer">Sara Academy · Udemy</div>
             <div class="cert-year">2025</div>
+            <p class="cert-desc">Core Python data science libraries — arrays, data manipulation, visualisation, and applying these to machine learning workflows.</p>
+            <a href="https://www.udemy.com/certificate/UC-2a105323-470e-4507-b7cd-fdeb785865e4/"
+               target="_blank" class="cert-verify-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+            </a>
           </div>
+
         </div>
 
       </div>
@@ -564,7 +587,7 @@
             <i class="fa-solid fa-graduation-cap edu-icon"></i>
             <div class="edu-degree">Bachelor of Information Technology</div>
             <div class="edu-school">Padmashree College / Nilai University — Cybersecurity Focus</div>
-            <div class="edu-period">Expected May 2026</div>
+            <div class="edu-period">Feb 2023 - expected 2026</div>
             <div class="edu-courses">
               Cloud Security · Network Security · Cryptography · Ethical Hacking · Digital Forensics · Secure Development
             </div>
@@ -572,7 +595,7 @@
 
           <div class="edu-card reveal">
             <i class="fa-solid fa-book-open edu-icon"></i>
-            <div class="edu-degree">Higher Secondary Certificate — Science Stream</div>
+            <div class="edu-degree">School Leaving Certificate (S.L.C) — Science Stream</div>
             <div class="edu-school">Sainik Awasiya Mahavidyalaya, Bhaktapur — NEB</div>
             <div class="edu-period">2020 — 2022</div>
           </div>
@@ -616,6 +639,13 @@
               <div>
                 <div class="cd-label">LinkedIn</div>
                 <div class="cd-val"><a href="https://linkedin.com/in/bibashbasnet938" target="_blank">linkedin.com/in/bibashbasnet938</a></div>
+              </div>
+            </div>
+            <div class="cd-row">
+              <div class="cd-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <div class="cd-label">Instagram</div>
+                <div class="cd-val"><a href="https://www.instagram.com/bibash__basnet/" target="_blank">@bibash__basnet</a></div>
               </div>
             </div>
             <div class="cd-row">
@@ -675,19 +705,22 @@
 
   </main>
 
-  <!-- ══════════════ FOOTER ══════════════ -->
   <footer>
     <p>Designed &amp; built by <span>Bibash Basnet</span> — Kathmandu, Nepal</p>
     <p class="footer-sub">
-      <i class="fa-regular fa-copyright"></i> 2025 ·
+      <i class="fa-regular fa-copyright"></i> 2025 &nbsp;·&nbsp;
       <a href="mailto:bibashbasnet45@gmail.com">bibashbasnet45@gmail.com</a>
+      &nbsp;·&nbsp;
+      <span class="footer-socials">
+        <a href="https://linkedin.com/in/bibashbasnet938" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/bibash__basnet/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </span>
     </p>
   </footer>
-
   <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
     <i class="fa-solid fa-chevron-up"></i>
   </button>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
